@@ -13,6 +13,7 @@ const randomNumber = Math.ceil(Math.random() *20);
 //initialize state
  let userAttempts = 5;
 
+
 // set event listeners to update state and DOM
 subButton.addEventListener('click', () => {
     //Console log to validate button click
@@ -37,7 +38,6 @@ subButton.addEventListener('click', () => {
     }
     if (userAttempts === 0) {
         attemptsRemaining.textContent = 'Game Over.';
-        return;
 
     }
 
