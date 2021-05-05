@@ -1,15 +1,13 @@
+
 //Functions
 
-export function compareNumber(userGuess) {
-    if (userGuess) {
-
+export function compareNumbers(userGuess, correctNum) {
+    if (userGuess === correctNum)  {
+        return 0;
     }
-
-
-}
-
-function getRandomNum (min, max) {
-    min = Math.ceil(min);
-    max = Math.floor(max);
-    return Math.floor(Math.random() * 20);
-}
+    if (userGuess < correctNum) {
+        return -1;
+    }
+    if (userGuess > correctNum)
+        return 1;
+};

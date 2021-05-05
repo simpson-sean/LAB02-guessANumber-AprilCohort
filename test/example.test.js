@@ -1,16 +1,18 @@
 // IMPORT MODULES under test here:
 // import { example } from '../example.js';
 
+import { compareNumbers } from "../assets/utils";
+
 const test = QUnit.test;
 
-test('time to test a function', (expect) => {
+test('compares user guess matches correct number return correct', (expect) => {
     //Arrange
     // Set up your arguments and expectations
-    const expected = true;
+    const expected = 'correct';
     
     //Act 
     // Call the function you're testing and set the result to a const
-    const actual = true;
+    const actual = compareNumbers(3,3);
 
     //Expect
     // Make assertions about what is expected versus the actual result
